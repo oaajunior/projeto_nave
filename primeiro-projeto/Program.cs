@@ -9,8 +9,7 @@ namespace curso
         {
 
             double a, b, c, delta, x1, x2;
-            Int 
-
+            
             string[] vet = Console.ReadLine().Split(' ');
 
             a = double.Parse(vet[0], CultureInfo.InvariantCulture);
