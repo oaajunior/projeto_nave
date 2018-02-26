@@ -1,36 +1,29 @@
 ﻿using System;
-using System.Globalization;
 
-namespace curso
+namespace HelloWorld
 {
     class Program
     {
         static void Main(string[] args)
         {
+            int[] carro;
+            carro = new int[2];
+            carro[0] = 1;
+            carro[1] = 2;
 
-            double a, b, c, delta, x1, x2;
+            int[] carr1 = { 2, 4, 5 };
+
+            int[ , ] matriz;
+            matriz = new int[2,1];
+
+            int[,] mat = { {2, 1 }, {3, 2 } };
+            int[] mat2 = { 2, 6 };
+             char a  = Console.ReadKey().KeyChar;
+            Console.WriteLine(a);
+            Console.ReadKey();
+           
             
-            string[] vet = Console.ReadLine().Split(' ');
 
-            a = double.Parse(vet[0], CultureInfo.InvariantCulture);
-            b = double.Parse(vet[1], CultureInfo.InvariantCulture);
-            c = double.Parse(vet[2], CultureInfo.InvariantCulture);
-
-            delta = b * b - 4 * a * c;
-
-            if (a == 0.0 || delta < 0.0)
-            {
-                Console.WriteLine("IMPOSSIVEL CALCULAR");
-            }
-            else
-            {
-                x1 = (-b + Math.Sqrt(delta)) / (2.0 * a);
-                x2 = (-b - Math.Sqrt(delta)) / (2.0 * a);
-                Console.WriteLine("X1 = " + x1.ToString("F4", CultureInfo.InvariantCulture));
-                Console.WriteLine("X2 = " + x2.ToString("F4", CultureInfo.InvariantCulture));
-            }
-
-            Console.ReadLine();
         }
     }
 }
